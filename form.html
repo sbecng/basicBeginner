@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/form.css">
+    <title>form Assignment</title>
+</head>
+<body>
+    <!-- Set main wrapper -->
+    <main>
+        <!-- Define user entry form -->
+        <form action="" method="post">
+            <!-- define form outer frame -->
+            <fieldset id="mainframe">
+                <legend>USER DETAILS</legend>
+                <!-- define username field-->
+                <FIeldset class="fieldframe">
+                    <legend>User_Name</legend>
+                    <label for="username">User Name</label>
+                    <input type="text" title="enter your user name here">
+                </FIeldset>
+                <!-- define Firstname field -->
+                <fieldset class="fieldframe" >
+                    <legend>Names</legend>
+                    <label for="fname">First Name</label>
+                    <input type="text" title="enter your firstnamehere">
+                    <!-- Last name -->
+                    <label for="lname">Last Name</label>
+                    <input type="text" title="enter your last name here" name="" id="">
+                    <!-- define gender field -->
+                    <fieldset>
+                        <legend>Gender</legend>
+                        <!-- male -->
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" value="male">
+                        <!-- female -->
+                        <label for="female">Female</label>
+                        <input type="radio" name="gender" value="female">
+                    </fieldset>
+                </fieldset>
+                <!-- define email field -->
+                <fieldset class="fieldframe">
+                    <legend>Email_Address</legend>
+                    <label for="email">Email Address</label>
+                    <input type="email" title="enter your emailhere">
+                </fieldset>
+                <!-- define telephone field -->
+                <fieldset class="fieldframe">
+                    <legend>Phone_Number</legend>
+                    <label for="phone">Phone Number</label>
+                    <input type="number" title="enter your telephone nummber here" name="" id="">
+                </fieldset>
+                <!-- define password field -->
+                <fieldset class="fieldframe">
+                    <legend>User_Password</legend>
+                    <label for="pswd">User Password</label>
+                    <input type="password" title="enter your password here">
+                </fieldset>
+                <!-- define password confirmation field -->
+                <fieldset class="fieldframe">
+                    <legend>Confirm_Password</legend>
+                    <label for="cpswrd">Confirm Password</label>
+                    <input type="password" title="confirm your password here" name="" id="">
+                </fieldset>
+                <!-- define picture upload field -->
+                <fieldset class="fieldframe">
+                    <legend>Upload_Picture</legend>
+                    <input type="file" name="" id="">
+                </fieldset>
+                <!-- define submit/Reset buttons -->
+                <fieldset class="fieldframe">
+                    <legend>Action_Buttons</legend>
+                    <!-- <input type="button" value="SUBMIT">
+                    <input type="button" value="RESET"> -->
+                    <button type="button">SUBMIT</button>
+                    <button type="button">RESET</button>
+                </fieldset>
+                <div ></div>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>

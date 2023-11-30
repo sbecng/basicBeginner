@@ -1,0 +1,52 @@
+body{
+    background-color: #e11879;
+    margin-top: 20px;
+}
+nav{
+    height: 10vh;
+    padding: 10px;
+    background-color: #e11879;
+}
+nav > img{
+    width: 100px;
+}
+nav > button{
+    background-color: yellow;
+    border-style: none;
+    width: 120px;
+    height: 40px;
+    padding: 10px;
+    font-weight: bolder;
+    margin-left: 80vw;
+}
+nav > ul{
+    list-style: none;
+    display: flex;
+    padding: 2rem;
+    /* background-color: #e11879; */
+}
+nav > ul > li > button{
+    background-color: #e11879;
+    color: white;
+    border: none;
+    margin: .8rem;
+}
+nav > ul > li > button:hover{
+    background-color: whitesmoke;
+    color: black;
+}
+nav > ul > li:first-child{
+    background-color: red;
+}
+nav > ul > li:nth-child(2){
+    background-color: lightblue;
+}
+nav > ul > li:nth-child(3){
+    background-color: yellow;
+}
+nav > ul > li:nth-child(4){
+    background-color: lightgreen;
+}
+nav > ul > li:last-child{
+    background-color: green;
+}

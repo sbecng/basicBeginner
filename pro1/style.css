@@ -1,0 +1,94 @@
+
+body{
+    /* background-color: cyan; */
+    margin: 0;
+    /* width: 1000px auto; */
+}
+
+/* style the Div by the id */
+#wrapper{
+    background-color: grey;
+}
+
+nav{
+    /* border-top: .2rem;
+    border-left: .2rem;
+    border-right: .2rem;
+    border-bottom: .2rem; */
+
+    /* OR */
+
+    /* border-style: ridge;
+    border-width: .2rem;
+    border-color: green; */
+
+    /* OR */
+    /* border WIDTH STYLE COLOR */
+
+    border: .2rem ridge blue;
+
+    /* Fixed height and width of an object. use ViewHeight (vh) and ViewWidth (vw)*/
+    height: 50vh;
+    width: 50vw;
+
+    background-color: green;
+
+    /* background-color: beige;
+    padding: 10px; */
+} 
+
+/* LIST STYLING */
+ul{
+    list-style-type: none;
+    border: .2rem solid red;
+}
+
+/* CLASS Styling */
+/* specificity to sepcify sepcific items of the class for styling */
+/* ul .list_item{
+    color: blue;
+} */
+
+/* General sibling selector */
+/* nav .list_item{
+    color: red;
+} */
+
+/* Direct sibling selector */
+nav > .list_item{
+    color: red ;
+}
+
+/* Adjacent sibling selector */
+ul > li + li {
+    color: aquamarine;
+}
+
+/* PSEUDO element selector */
+/* :hover :focus :blur :active :first-child :nth-child() :last-child */
+ul > li:first-child{
+    color: palevioletred;
+}
+/* OR */
+ul > li:nth-child(2){
+    background-color: yellow;
+}
+/* OR */
+ul > li:last-child{
+    background-color: gray;
+}
+
+/* :hover for effect when mouse hovers over the element */
+nav > .list_item:hover{
+    background-color: cadetblue;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* Assigment
+1. design the purple Konga page nav bar and yellow shop now button
+2. each menu to have different colors using selectors for styling
+3. hover on each menu to change background to white with black text
+4. hover on the shopnow button to change background color to green with white text
+*/
+

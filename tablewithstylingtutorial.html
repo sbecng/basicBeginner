@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--EXTERNAL STYLING -->
+    <!-- it is done outside the document with a .css file -->
+    <!-- first style file should be names style.css while any other style file can be named semantically -->
+    <!-- then LINK the style.css to the doc -->
+    <!-- by default index.html works with style.css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Table Element</title>
+    <!-- INTERNAL STYLING -->
+    <!--use STYLE tag to do internal styling -->
+    <!-- SELECTORS are element id, name, class of the element that is used by CSS to select the tag/element -->
+    <!-- select the tag/element to style by calling its name say CAPTION, then declare with braces and list of keys and corresponding properties -->
+    <style>
+        caption{
+            background-color: green;
+            color: aliceblue;
+            font-size: xx-large;
+            /* comment off the line */
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <!-- table tag. Table is made up of CELLS, joined together by CELLS SPACING arranged into COLUMNS and ROWS. headed by thead tag-->
+        <!-- tbale elements: BORDER, CELLSPACING -->
+        <!-- MARGIN is space in between 2 containers. PADDING is spacing within 1 conatining -->
+
+        <table border = "1" cellspacing ="0" cellpadding="20">
+
+            <!-- table head tag-->
+            <thead>
+
+                <!-- table caption tag -->
+
+                <caption>STAFF PAYROLL</caption>
+
+                <!-- A bale header is a row, therefore we need ROW tag to define the header row within the tabler header -->
+                <tr>
+
+                    <!-- th tag gives lighter text while theading gives thick text -->
+                    <th>SN</th>
+                    <th>FirstName</th>
+                    <th>LastName</th>
+                    <th>Occupation</th>
+                    <th>Qualification</th>
+                    <th>Gender</th>
+                </tr>
+            </thead>
+            <!-- table body tag -->
+            <tbody>
+
+                <!-- table body also comprises of rows to be defined by tr tag. the number of rows determines the number of tr tags -->
+                <!-- Row 1 -->
+                <tr>
+
+                    <!-- table data tag to store data in the row -->
+                    <!-- use th instead of td to give the data same font type of the headers -->
+                    <!-- use COLSPAN to merge multiple columns(horizontal) and ROWSPAN to merge multiple rows (vertical) -->
+                    <th>1</th>
+                    <td colspan="2">John</td>
+                    <!-- <td>Doe</td> -->
+                    <td>Data Science</td>
+                    <td>pgd, M.Sc, B.Sc.</td>
+                    <td rowspan="2">male</td>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <td>Mathew</td>
+                    <td>Michael</td>
+                    <td>UI & UX</td>
+                    <td>M.Sc</td>
+                    <!-- <td>male</td> -->
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <td>Tosin</td>
+                    <td>Orilade</td>
+                    <td>Software Developer</td>
+                    <td>B.Sc</td>
+                    <td>Female</td>
+                </tr>
+                <tr>
+                    <th>4</th>
+                    <td>Aderonke</td>
+                    <td>Akpan</td>
+                    <td>Nursing</td>
+                    <td>B.Sc</td>
+                    <td>Female</td>
+                </tr>
+                <tr>
+                    <th>5</th>
+                    <td>Christiana</td>
+                    <td>Okure</td>
+                    <td>Quality Assurance</td>
+                    <td>B.Sc</td>
+                    <td>Female</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="wrapper">
+        <table border="1" cellspacing="0" cellpadding="20">
+            <thead>
+                <!--CSS STYLING  -->
+                <!-- 3 types of styling. 1. Inline Styling. 2. Internal Styling 3. External Styling -->
+                <!-- 1. INLINE STYLING -->
+                <!-- use STYLE global attribute to style an element -->
+                <caption style="background-color: green; color: aliceblue; font-size:xx-large;">STUDENTS TABLE</caption>
+                <tr>
+                    <th>Day/Time</th>
+                    <th>9:00-10:00</th>
+                    <th>10:00-01:00</th>
+                    <th>01:00-02:00</th>
+                    <th>02:00-03:00</th>
+                    <th>03:00-04:00</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td>Data Science</td>
+                    <td>Web Dev</td>
+                    <td style="background-color: yellow; color: green;" rowspan="5">Break</td>
+                    <td colspan="2">Cyber Security</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td colspan="2">DevOps</td>
+                    <td>UI & UX</td>
+                    <td rowspan="2">Web Dev</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>DevOps</td>
+                    <td>Data Science</td>
+                    <td>Web Dev</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- INTERNAL SCRIPTING -->
+        <!-- use SCRIPT global internal scripting tag -->
+    </div>
+</body>
+</html>

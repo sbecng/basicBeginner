@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex properties continuation</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="" class="number">1</div>
+        <div id="" class="number">2</div>
+        <div id="" class="number">3</div>
+        <div id="" class="number">4</div>
+        <div id="" class="number">5</div>
+    </div>
+    <!-- EMBEDDED STYLE -->
+    <style>
+        /* universal selector reset */
+ 
+        /* Reset style from Meyer web */
+        html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed, 
+        figure, figcaption, footer, header, hgroup, 
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+        /* HTML5 display-role reset for older browsers */
+        article, aside, details, figcaption, figure, 
+        footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+        body {
+            line-height: 1;
+        }
+        ol, ul {
+            list-style: none;
+        }
+        blockquote, q {
+            quotes: none;
+        }
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content: '';
+            content: none;
+        }
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+/* css reset ends */
+/* my css */
+        #wrapper{
+            background-color: grey;
+            display: flex;
+            /* horizontal flex items */
+            justify-content: space-evenly;
+            /* vertical flex items */
+            align-items: center;
+            /* align-items: flex-end; */
+            /* align-items: flex-start; */
+            height: 100vh;
+
+            /* FLEX WRAP */
+            flex-wrap: wrap;
+            flex-wrap: nowrap;
+        }
+        #wrapper > .number{
+            border: .2rem solid green;
+            width: 3%;
+            height: 3%;
+            padding: 2rem;
+        }
+        #wrapper > .number:last-child{
+            background-color: red;
+            /* resize flex item */
+            /* flex: 20%; */
+            flex-basis: 20%/*200px; used for flex child item*/
+            order:3;
+        }
+            #wrapper > .number:nth-child(4){
+            background-color: yellowgreen;
+            /* flex-shrink: 5rem; */
+            /* flex-grow: 5rem; */
+            /* flex-grow: 5rem; */
+            align-self: flex-start;
+
+            /* REORDER FLEX ITEMS */
+            order: 1;
+            order: -1;
+        }
+            #wrapper > .number:nth-child(2){
+            background-color: lightblue;
+            align-self: flex-end;
+        }
+        #wrapper > .number:nth-child(1){
+            background-color: lightcoral;
+            justify-self: flex-end;
+        }
+        #wrapper > .number:nth-child(4):hover{
+            background-color: grey;
+            font-size: 2rem;
+        }
+        #wrapper >  .number:nth-child(5):hover{
+            background-color: grey;
+            font-size: 2rem;
+            color: blue;
+        }
+        #wrapper >  .number:first-child{
+            align-self: flex-start;
+            order: 3;
+        }
+    </style>
+</body>
+</html>

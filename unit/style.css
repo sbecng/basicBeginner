@@ -1,0 +1,54 @@
+/* body{
+    background-color: red;
+} */
+/* Default unit is px, default text is black, defaul back is white */
+/* Universal selector (*) for CSS reset */
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+#wrapper{
+    background-color: green;
+    /* VIEWPORT units */
+    /* vh,vw,dvh,dvw are relative units to the device viewport*/
+    /* Viewport calculates the height and width to 100  */
+    /* HEIGHT */
+    height: 50vh;
+    /* WIDTH */
+    width: 100vw;
+    /* OVERFLOW controls content of the container to the size of the container */
+    /* overflow: scroll; */
+
+    /* PERCENTAGE % */
+    /* relates the contents as a percentage of the container */
+    height: 50%;
+}
+#box1{
+    background-color: grey; 
+    border: .2rem solid red;  
+    overflow: scroll;    
+}
+#box1 > p{
+    width: 50%;
+    border: .2rem solid blue;
+}
+
+/* ABSOLUTE UNITS. fixed units */
+/* will display the elements even there are no contents in the container */
+#box2{
+    /* pixel */
+    height: 200px;
+    border: .2rem dashed royalblue;
+    /* centimeters */
+    /* height: 5cm; */
+}
+
+/* TEXT RELATED UNITS */
+#box2 > p{  
+    /* root element relative */
+    font-size: 4rem;
+    /* fraction */
+    font-size: 4fr;
+    /* immediate element relative */
+    font-size: 4em;
+}

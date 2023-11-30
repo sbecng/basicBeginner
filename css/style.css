@@ -1,0 +1,21 @@
+/* EXTERNAL STYLING 
+    chosen above inline and internal for 
+    1. Easier Readability
+    2. Easier debugging
+    3. Easier presentation
+*/
+
+/* use the body tag selector to quickly test of the css file is propoerly linked to the doc */
+body{
+    background-color: red;
+}
+/* this will select all CAPTION tags in the document and style them same way */
+caption{
+    background-color: green;
+    color: aliceblue;
+    font-size: xx-small;
+}
+/* SELECTORS identifiers for selecting basic components of elements from your css for styling */
+/* Element/Tag selectors use curly braces after the elemeent/tag name div{ } */
+/* Class selector. returns a collection, group of items with the same calss nameuse period before the calss name. eg .sample{ } */
+/* id slector. use # before the id name eg #verify { } */

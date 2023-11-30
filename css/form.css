@@ -1,0 +1,39 @@
+body {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #30302f;
+    padding: 20px 20px 20px 20px;
+    border: 1px solid black;
+  }
+
+fieldset{
+    background-color: lightyellow;
+    border-color: whitesmoke;
+    font-size:large;
+    /* border-style: none; */
+}
+
+.fieldframe{
+    background-color: lightgray;
+    font-style: italic;
+}
+
+legend{
+    color: red;
+}
+input{
+    background-color: gray  ;
+    color: whitesmoke;
+    border-style: none;
+    font-style:italic;
+}
+
+button{
+    background-color: green;
+    color: aliceblue;
+}
+
+label{
+    color: green;
+    font-style: normal;
+}

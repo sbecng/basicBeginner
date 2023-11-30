@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form tutorial</title>
+</head>
+<body>
+    <!-- Elements = Open tag and close tag and the texts within the two tags -->
+
+    <!-- Form is used for communication with your site users -->
+
+    <!-- Instead of usin MAIN  use DIV <div.container id-->
+        <!-- Sample 1 to return a collection of elements use CLASS-->
+    <div class="container">
+
+    </div>
+        <!-- Sample 2 to give identification name to an element use id-->
+    <div id="wrapper">
+
+        <form action="process.html" method="post">
+            <!-- form elements have 3 METHODs of requesting information from the Server.
+                1.GET to get information from the server
+                2.POST to send information to the server
+                3.DIALOG not freuently used
+
+                METHOD
+                how you want the form to be processed
+
+                ACTION
+                where you want the to be  process the form. It could be a javascript file or backend files that is meant to process the form
+
+                Form decated tags
+                1. table
+                2. fieldset
+
+            -->
+            <!-- Sample Form wireframe
+                username
+                firstname
+                email
+                telephone
+                password
+                confirm password
+                upload pcs
+                submit/reset
+            -->
+            <fieldset>
+                <!-- fieldset provides a framee border on the form -->
+                <legend>user_details</legend> 
+                    <!-- legend names the frame -->
+                <label for="username">Username</label>
+                <fieldset>
+                    <legend>username</legend>
+                    <input type="text" placeholder="username" title="please enter your username" name="" id="">
+                    <!-- input types: text, date, file, password, email, tel, radio, checkbox, number, submit, reset, button, image
+                        shortcut is "input:text" 
+
+                        input type BUTTON can be used anywhere else but not in a form element. Rather use SUBMIT in a form
+                    -->
+                </fieldset>
+                <fieldset>
+                    <legend>firstname</legend>
+                    <input type="text" placeholder="firstname" name="" id="">
+                    <!-- INPUT tag is an inline tag  -->
+                </fieldset>
+                <fieldset>
+                    <legend>email</legend>
+                    <input type="email" placeholder="email" id="">
+                </fieldset>
+                <fieldset>
+                    <legend>telephone</legend>
+                    <input type="tel" placeholder="telephone" name="" id="">
+                </fieldset>
+                <fieldset>
+                    <legend>password</legend>
+                    <input type="password" placeholder="password" name="" id="">
+                </fieldset>
+                <fieldset>
+                    <legend>confirm password</legend>
+                    <input type="password" placeholder="confirm password" name="" id="">
+                </fieldset>
+                <fieldset>
+                    <legend>upload picture</legend>
+                    <input type="file" placeholder="upload picture" name="" id="">
+                </fieldset>
+            </fieldset>
+            <!-- webpage button designs -->
+            <fieldset>
+                <legend>controls</legend>
+                <!-- button sample 1 using INPUT tag -->
+                <input type="submit" value="submit">
+                <!-- button Sample 2 using BUTTON tag -->
+                <button type="reset">reset</button>
+            </fieldset>
+
+            <!-- SELECT tag -->
+            <select name="" id="">
+                <option value="">lagos</option>
+                <option value="Ibadan"></option>
+            </select>
+
+            <!-- OPTION tag -->
+            <fieldset>
+                <legend>Gender</legend>
+                <input type="radio" name="" id="" tabindex="10">
+                <label for="male">male</label>
+                <input type="radio" female="" id="">
+                <label for="female">female</label>
+            </fieldset>
+        </form>
+    </div>
+        <!-- IDE shortcut is div + "." -->
+    <div class="container" id="Gender">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="">
+    </div>
+</body>
+</html>
